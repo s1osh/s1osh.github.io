@@ -1,0 +1,237 @@
+@media only screen and (min-width: 414px) and (max-width: 767px) AND (orientation: portrait) { 
+    @font-face{
+        font-family: "Ballinese";
+        src: local("./assets/fonts/Ballinese.otf") format("opentype");
+        src: local("./assets/fonts/Ballinese.eot") format("eot");
+        src: local("./assets/fonts/Ballinese.woff") format("woff");
+        src: local("./assets/fonts/Ballinese.woff") format("woff");
+        font-stretch:semi-expanded;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* Landscape Alert Hide */
+    #mobile-landscape-alert{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    /* Title */
+    #title-container{
+        z-index: -10;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 43.5%;
+    }           
+
+    #title{
+        filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+        width: 320px;
+        height: 220px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .title-float{
+        -webkit-animation: floating-title-animation 6s ease-in-out infinite;
+        -o-animation: floating-title-animation 6s ease-in-out infinite;
+        animation: floating-title-animation 6s ease-in-out infinite;
+    }
+    
+    @keyframes floating-title-animation {
+        0% {
+            -webkit-transform: translateY(0%);
+            -moz-transform: translateY(0%);
+            -o-transform: translateY(0%);
+            transform: translateY(0%) rotate(0.5deg);
+        }
+    
+        50% {
+            -webkit-transform: translateY(3%);
+            -moz-transform: translateY(3%);
+            -o-transform: translateY(3%);
+            transform: translateY(3%) rotate(-0.5deg);
+        }
+    
+        100% {
+            -webkit-transform: translateY(0%);
+            -moz-transform: translateY(0%);
+            -o-transform: translateY(0%);
+            transform: translateY(0%) rotate(0.5deg);
+        }
+    }
+    
+    /* Repo */
+    #repo-container{
+        z-index: -10;
+        left: 95%;
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+        transform: translate(-65%, -45.5%);
+        top: 50%;
+        margin-top: 65px;
+    }
+    
+    #repo{
+        filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+        width: 215px;
+        height: 115px;
+    }
+
+    #navbar-container{
+        -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+        position: absolute;
+        left: 50%;
+        transform: translate(-54%, -50%);
+    }
+
+    .addto-navbar{
+        -webkit-filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.5));
+        position: absolute;
+        width: 310px;
+        height: 180px;
+        top: 118%;
+        left: 72.5%;
+        min-height: 100%;
+        min-width: 100%;
+        transform: translate(-77.5%, -55%);
+        align-content: center;
+        margin: 0;
+    }
+
+    .addto-img{
+        -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+        margin-top: 1.5px;
+        margin-left: 37px;
+        float: left;
+        width: 37px;
+        height: 37px;
+        opacity: 65%;
+    }
+    
+    .addto-btns{
+        -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.8));
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+        margin-top: 1px;
+        padding-top: 5px;
+        border-radius: 15px;
+        background-color: rgba(195, 0, 255, 0.1);
+        width: 250px;
+        height: 45px;
+    }
+
+    .addto-p{
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+        color: white;
+        font-family: "Ballinese";
+        letter-spacing: 1.75px;
+        margin-top: 4.25%;
+        margin-right: 9px;
+        font-size: 18px;
+        float: None;
+        opacity: 75%;
+    }
+
+    #addto-discord{
+        font-family: "Ballinese";
+        font-size: 18px;
+        position: relative;
+        left: -13%;
+        width: 300px;
+    }
+    
+    #addto-sileo{
+        margin-right: 39px;
+        margin-bottom: 0;
+        float: right;
+    }
+    
+    .pc-navbar{
+        visibility: hidden;
+    }
+    
+    #mobile-navbar{
+        visibility: visible;
+    }
+
+    /* Background Stuff */
+    #mobile-bg{
+        z-index: -1000;
+        left: -97%;
+        position: absolute;
+        top: 0%;
+        width: 1550;
+        height: 680px;
+    }
+
+    .mobile-bg-float{
+        -webkit-animation: moving-bg-animation 5.4s ease-in-out infinite;
+        -o-animation: moving-bg-animation 5.4s ease-in-out infinite;
+        animation: moving-bg-animation 5.4s ease-in-out infinite;
+    }
+
+    @keyframes moving-bg-animation {
+        0% {
+            -webkit-transform: translateY(-2%);
+            -moz-transform: translateY(-2%);
+            -o-transform: translateY(-2%);
+            transform: translateY(-2%);
+        }
+    
+        50% {
+            -webkit-transform: translateY(0%);
+            -moz-transform: translateY(0%);
+            -o-transform: translateY(0%);
+            transform: translateY(0%);
+        }
+    
+        100% {
+            -webkit-transform: translateY(-2%);
+            -moz-transform: translateY(-2%);
+            -o-transform: translateY(-2%);
+            transform: translateY(-2%);
+        }
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) AND (orientation: landscape) {
+    #mobile-landscape-alert{
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 1000;
+        position: absolute;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+
+    #ml-alert-p{
+        color: white;
+    }
+
+    #video-background{
+        visibility: hidden;
+    }
+    
+    #title-container{
+        visibility: hidden;
+    }
+
+    #repo-container{
+        visibility: hidden;
+    }
+
+    #mobile-navbar{
+        visibility: hidden;
+    }
+
+    .addto-btns{
+        visibility: hidden;
+    }
+}

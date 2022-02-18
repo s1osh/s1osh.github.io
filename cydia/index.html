@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>s1osh's repo</title>
+        <link rel="icon" href="./CydiaIcon.png">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/mobile.css">
+        <meta property="og:image" content="https://haoict.github.io/cydia/CydiaIcon.png" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    </head>
+    <body>
+        <!--Background Audio-->
+        <audio autoplay src="./assets/audio/2002.mp3" loop id="bg-music"></audio>
+        <script>
+            var music = document.getElementById('bg-music');
+            music.volume = 0.2;
+        </script>
+
+        <!--Alert For PC NavBar Clicks-->
+        <div id="alert-box">
+            <a id="close-alert"><img src="./assets/img/x-button.png" id="x-button"></a>
+            <img src="./assets/img/alert.png" id="alert-title">
+            <hr id="alert-hr">
+            <p id="alert-subtitle"><strong>In order to add this repo:</strong></p>
+            <p id="alert-text">1) Visit <a id="alert-repo" href="https://s1osh.github.io">s1osh.github.io</a> on your iOS device <br>2) Tap on "Add to Cydia" <br>3) Enjoy the repo!</p>
+        </div>
+        <script src="./assets/js/pc-alert.js"></script>
+
+        <div id="mobile-landscape-alert">
+            <p id="ml-alert-p">Who goes to landscape oreientation? Flip your phone around to access this page</p>
+        </div>
+
+        <div id="container">
+            <!--Video and Gif Backgrounds (PC and Mobile)-->
+            <div class="video-container">
+                <video autoplay muted id="video-background" loop>
+                    <source src="" id="vid">
+                </video> 
+            </div>
+
+            <div class="mobile-bg-container">
+                <img id="mobile-bg" class="mobile-bg-float">
+            </div>
+
+            <script src="./assets/js/bg-handle.js"></script>
+
+            <!--Title-->
+            <center>
+                <div id="title-container">
+                    <img src="./assets/img/title7.png" class="title-float" id="title">
+                </div>
+            </center>
+
+            <!--Repo-->
+            <div id="repo-container">
+                <img src="./assets/img/repo.png" class="repo-float" id="repo">
+            </div>
+
+            <!--Add-to Nav Bar (PC)-->
+            <center>
+                <div class="addto-navbar" class="pc-navbar">
+                    <ul>
+                        <li>
+                            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://s1osh.github.io/cydia/" id="pc-cydia">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/Cydia.png" class="addto-img">
+                                    <p class="addto-p"><strong>Add to Cydia</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sileo://source/https://s1osh.github.io/cydia/" id="pc-sileo">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/Sileo.png" class="addto-img">
+                                    <p class="addto-p" id="addto-sileo"><strong>Add to Sileo</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="zbra://sources/add/https://s1osh.github.io/cydia/" id="pc-zebra">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/Zebra.png" class="addto-img">
+                                    <p class="addto-p"><strong>Add to Zebra</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/discord.png" class="addto-img">
+                                    <p class="addto-p" id="addto-discord"><strong>Join Discord</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <script src="./assets/js/pc-navbar.js"></script>
+                    </ul>
+                </div>
+            </center>
+            <!--End Add-to Nav Bar (PC)-->
+
+            <!--Add-to Nav Bar (Mobile)-->
+            <center>
+                <div class="addto-navbar" id="mobile-navbar">
+                    <ul>
+                        <li>
+                            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://s1osh.github.io/cydia/">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/Cydia.png" class="addto-img">
+                                    <p class="addto-p"><strong>Add to Cydia</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sileo://source/https://s1osh.github.io/cydia/">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/Sileo.png" class="addto-img">
+                                    <p class="addto-p" id="addto-sileo"><strong>Add to Sileo</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="zbra://sources/add/https://s1osh.github.io/cydia/">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/Zebra.png" class="addto-img">
+                                    <p class="addto-p"><strong>Add to Zebra</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="addto-btns">
+                                    <img src="./assets/img/discord.png" class="addto-img"">
+                                    <p class="addto-p" id="addto-discord"><strong>Join Discord</strong></p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </center>
+            <!--End Add-to Nav Bar (Mobile)-->
+        </div>
+    </body>
+</html>

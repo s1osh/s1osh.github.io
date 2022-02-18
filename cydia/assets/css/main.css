@@ -1,0 +1,323 @@
+/* Fonts */
+@font-face{
+    font-family: "Ballinese";
+    src: local("./assets/fonts/Ballinese.otf") format("opentype");
+    src: local("./assets/fonts/Ballinese.ttf") format("truetype");
+    font-stretch:semi-expanded;
+}
+
+@font-face{
+    font-family: "Brushwell";
+    src: local("./assets/fonts/Brushwell.otf") format("opentype");
+    font-stretch:semi-expanded;
+}
+
+
+/* Default Tags */
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+a:link{
+    color:white;
+}
+a:visited{
+    color: white;
+}
+
+li{
+    width: 300px;
+    list-style: none;
+}
+
+#container{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Mobile Landscape Alert */
+#mobile-landscape-alert{
+    position: absolute;
+    visibility: hidden;
+}
+
+#ml-alert-p{
+    background-color: white;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+/* Alert */
+#alert-repo{
+    color: yellow;
+    font-family: "Brushwell";
+    font-size: 20px;
+}
+
+#x-button{
+    top: 1%;
+    left: 92%;
+    position: absolute;
+    float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#alert-box{
+    visibility: hidden;
+    z-index: 100;
+    position: relative;
+    margin-top: -4%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    border: 5px solid white;
+    border-radius: 20px;
+    left: 50%;
+    min-height: 10%;
+    min-width: 10%;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+ 
+#alert-title{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    height: 150px;
+    transform: translate(25%, -15%);
+}
+
+#alert-subtitle{
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-family: "Brushwell";
+    font-size: 26px;
+    transform: translate(27.5%, 290%);
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+#alert-text{
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-family: "Brushwell";
+    font-size: 22px;
+    transform: translate(2%, 153%);
+    letter-spacing: 2px;
+}
+
+
+/* Title */
+#title-container{
+    z-index: -10;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 48%;
+}
+
+#title{
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    width: 400px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.title-float{
+    -webkit-animation: floating-title-animation 6s ease-in-out infinite;
+    -o-animation: floating-title-animation 6s ease-in-out infinite;
+    animation: floating-title-animation 6s ease-in-out infinite;
+}
+
+@keyframes floating-title-animation {
+    0% {
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%) rotate(0.5deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(4%);
+        -moz-transform: translateY(4%);
+        -o-transform: translateY(4%);
+        transform: translateY(4%) rotate(-0.5deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%) rotate(0.5deg);
+    }
+}
+
+
+/* Repo */
+#repo-container{
+    z-index: -10;
+    left: 0;
+    min-height: 10%;
+    min-width: 10%;
+    position: relative;
+    transform: translate(45.5%, 45%);
+    top: 0;
+    margin-top: 90px;
+}
+
+#repo{
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    width: 250px;
+    height: 150px;
+}
+
+.repo-float{
+    -webkit-animation: floating-repo-animation 6s ease-in-out infinite;
+    -o-animation: floating-repo-animation 6s ease-in-out infinite;
+    animation: floating-repo-animation 6s ease-in-out infinite;
+}
+
+@keyframes floating-repo-animation {
+    0% {
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%) rotate(8deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(2%);
+        -moz-transform: translateY(2%);
+        -o-transform: translateY(2%);
+        transform: translateY(2%) rotate(-4deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%) rotate(8deg);
+    }
+}
+
+
+/* NavBar */
+.pc-navbar{
+    visibility: visible;
+}
+
+#mobile-navbar{
+    visibility: hidden;
+}
+
+#navbar-container{
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.addto-navbar{
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    position: absolute;
+    width: 310px;
+    height: 200px;
+    top: 115%;
+    left: 51%;
+    min-height: 100%;
+    min-width: 10%;
+    transform: translate(-77.5%, -48%);
+    align-content: center;
+    margin: 0;
+}
+
+.addto-img{
+    -webkit-filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+    margin-top: 0;
+    margin-left: 95px;
+    float: left;
+    width: 45px;
+    height: 45px;
+    opacity: 80%;
+}
+
+.addto-btns{
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.8));
+    margin-top: 5px;
+    padding-top: 5px;
+    border-radius: 15px;
+    background-color: rgba(195, 0, 255, 0.1);
+    width: 400px;
+    height: 50px;
+}
+
+.addto-p{
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.3));
+    color: white;
+    font-family: "Ballinese";
+    letter-spacing: 2px;
+    margin-top: 0.4%;
+    margin-right: 60px;
+    font-size: 30px;
+    float: None;
+    opacity: 90%;
+}
+
+#addto-discord{
+    font-size: 30px;
+    margin-right: 63px;
+}
+
+#addto-sileo{
+    margin-right: 99px;
+    margin-bottom: 0;
+    float: right;
+}
+
+
+/* Background Stuff */
+#video-background{
+    z-index: -10;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
